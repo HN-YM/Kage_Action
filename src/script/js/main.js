@@ -4,7 +4,7 @@ let translations;
 const loadLanguage = (lang) => {
     if (!PREPARED_LANG_SET.has(lang)) lang = "ja";
 
-    fetch(`${lang}.json`)
+    fetch(`../../../assets/languages/${lang}.json`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(response.status);
