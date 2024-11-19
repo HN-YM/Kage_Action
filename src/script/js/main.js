@@ -1,8 +1,8 @@
-const PREPARED_LANG_SET = new Set(["ja_JP", "en_US"]);
+const PREPARED_LANG_SET = new Set(["ja", "en"]);
 
 let translations;
 const loadLanguage = (lang) => {
-    if (!PREPARED_LANG_SET.has(lang)) lang = "ja_JP";
+    if (!PREPARED_LANG_SET.has(lang)) lang = "ja";
 
     fetch(`${lang}.json`)
         .then(response => {
