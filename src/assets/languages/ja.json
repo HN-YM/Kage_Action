@@ -1,4 +1,6 @@
 {
-    "final_exam": "最終試験",
-    "required_score": "必要スコア"
+    "test1": "テスト",
+    "test2": "テストテキスト２",
+    "japanese": "日本語",
+    "english": "英語"
 }

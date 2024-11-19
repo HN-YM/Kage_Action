@@ -1,4 +1,6 @@
 {
-    "final_exam": "Final exam",
-    "required_score": "Test score"
+    "test1": "Test",
+    "test2": "testtext2",
+    "japanese": "Japanese",
+    "english": "English"
 }

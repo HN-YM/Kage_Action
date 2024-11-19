@@ -1,7 +1,7 @@
 const PREPARED_LANG_SET = new Set(["ja", "en"]);
 
 let translations;
-const loadLanguage = (lang) => {
+let loadLanguage = (lang) => {
     if (!PREPARED_LANG_SET.has(lang)) lang = "ja";
 
     fetch(`../../assets/languages/${lang}.json`)
@@ -25,5 +25,15 @@ const loadLanguage = (lang) => {
 window.onload = () => {
     const lang = window.navigator.language.substring(0, 2);
     loadLanguage(lang);
-    console.log("loaded "+lang+" file.")
+    console.log("loaded "+lang+" file.");
+}
+
+function _on_japanese_button_pressed(){
+    lang = "ja";
+    loadLanguage(lang);
+}
+
+function _on_english_button_pressed(){
+    lang = "en";
+    loadLanguage(lang);
 }
